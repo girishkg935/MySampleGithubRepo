@@ -1,2 +1,6 @@
 This is a sample text file
 Some more content has been added
+
+Again some more content has been added now
+
+Here is some more content
