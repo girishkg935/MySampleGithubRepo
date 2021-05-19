@@ -10,7 +10,7 @@ namespace MVCWebAPIDemo.Controllers
 {
     public class ProductsController : ApiController
     {
-        ProdDbContext context;
+        private readonly ProdDbContext context;
 
         public ProductsController()
         {
@@ -48,6 +48,7 @@ namespace MVCWebAPIDemo.Controllers
             }
         }
 
+        //PUT /api/products
         public Product Put(Product product, int id)
         {
             if (!ModelState.IsValid)
