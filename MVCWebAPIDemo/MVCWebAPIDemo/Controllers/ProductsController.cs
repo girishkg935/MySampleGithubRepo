@@ -18,6 +18,7 @@ namespace MVCWebAPIDemo.Controllers
         }
 
         //GET /api/products
+        //This method will return all the products
         public IEnumerable<Product> GetProducts()
         {
             var products = context.Products.ToList();
@@ -25,6 +26,7 @@ namespace MVCWebAPIDemo.Controllers
         }
 
         //GET /api/products/id
+        //This method will return a single product for the supplied id
         public Product GetDetails(int id)
         {
             var product = context.Products.SingleOrDefault(p => p.ProductId == id);
